@@ -58,7 +58,7 @@ a:hover {
   align-items: center;
   list-style-type: none;
   gap: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav > li:hover,

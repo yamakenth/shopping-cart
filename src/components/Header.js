@@ -12,9 +12,9 @@ export default function Header(props) {
       </div>
       <div className='container right'>
         <ul className='nav'>
-          <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to='/product'>Product</NavLink></li>
-          <li><NavLink to='/contact'>Contact</NavLink></li>
+          <li><NavLink to='/'>HOME</NavLink></li>
+          <li><NavLink to='/product'>PRODUCT</NavLink></li>
+          <li><NavLink to='/contact'>CONTACT</NavLink></li>
         </ul>
         <div className='cart' onClick={props.handleShowCart}>
           <img src={ShoppingCart} alt='' id='shopping-cart' />

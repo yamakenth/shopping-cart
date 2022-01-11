@@ -176,6 +176,16 @@ a, a:visited {
 
 .contact {
   width: 800px;
+}
+
+.contact > h1 {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #efb90a;
+}
+
+.contact-logos {
   display: flex;
   justify-content: space-between;
   align-items: center;

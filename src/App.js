@@ -20,11 +20,13 @@ export default function App() {
     <BrowserRouter>
       <div className='App'>
         <Header handleShowCart={handleShowCart} />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/product' element={<Product />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
+        <div className='content'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/product' element={<Product />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </div>
         {showCart && <Cart handleHideCart={handleHideCart} />}
       </div>
     </BrowserRouter>

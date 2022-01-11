@@ -19,7 +19,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.shop-now:hover {
+.shop-now:hover,
+a:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -171,4 +172,27 @@ a, a:visited {
   height: 400px;
   width: auto;
   border-radius: 24px;
+}
+
+.contact {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-logo {
+  height: 100px;
+  width: 100px;
+}
+
+#github > img {
+  height: 98px;
+  width: 98px;
+}
+
+#github {
+  background-color: #ebebeb;
+  border-radius: 50%;
+  padding: 1px 2px;
 }

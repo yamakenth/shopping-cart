@@ -97,3 +97,24 @@ a, a:visited {
   width: 40px;
   height: auto;
 }
+
+.cart-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.cart-page {
+  background-color: #121212;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  z-index: 30;
+}

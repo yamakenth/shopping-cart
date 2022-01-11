@@ -24,7 +24,7 @@ export default function App() {
         <div className='content'>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/product' element={<Product />} />
+            <Route path='/product' element={<Product data={Data} />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>

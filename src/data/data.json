@@ -1,14 +1,14 @@
 [
-  { "name": "ada", "price" : 1.16, "logo": "../img/ada.png" },
-  { "name": "avax", "price" : 86.78, "logo": "../img/avax.png" },
-  { "name": "bnb", "price" : 453.52, "logo": "../img/bnb.png" },
-  { "name": "btc", "price" : 41944.67, "logo": "../img/btc.png" },
-  { "name": "doge", "price" : 0.151352, "logo": "../img/doge.png" },
-  { "name": "dot", "price" : 24.72, "logo": "../img/dot.png" },
-  { "name": "eth", "price" : 3143.91, "logo": "../img/eth.png" },
-  { "name": "luna", "price" : 71.18, "logo": "../img/luna.png" },
-  { "name": "sol", "price" : 137.47, "logo": "../img/sol.png" },
-  { "name": "usdc", "price" : 1.01, "logo": "../img/usdc.png" },
-  { "name": "usdt", "price" : 1.00, "logo": "../img/usdt.png" },
-  { "name": "xrp", "price" : 0.44319, "logo": "../img/xrp.png" }
+  { "symbol": "ada", "name": "Cardano", "price" : 1.16, "logo": "../img/ada.png" },
+  { "symbol": "avax", "name": "Avalanche", "price" : 86.78, "logo": "../img/avax.png" },
+  { "symbol": "bnb", "name": "Binance Coin", "price" : 453.52, "logo": "../img/bnb.png" },
+  { "symbol": "btc", "name": "Bitcoin", "price" : 41944.67, "logo": "../img/btc.png" },
+  { "symbol": "doge", "name": "Dogecoin", "price" : 0.151352, "logo": "../img/doge.png" },
+  { "symbol": "dot", "name": "Polkadot", "price" : 24.72, "logo": "../img/dot.png" },
+  { "symbol": "eth", "name": "Ethereum", "price" : 3143.91, "logo": "../img/eth.png" },
+  { "symbol": "luna", "name": "Terra", "price" : 71.18, "logo": "../img/luna.png" },
+  { "symbol": "sol", "name": "Solana", "price" : 137.47, "logo": "../img/sol.png" },
+  { "symbol": "usdc", "name": "TetherUS", "price" : 1.01, "logo": "../img/usdc.png" },
+  { "symbol": "usdt", "name": "USD Coin", "price" : 1.00, "logo": "../img/usdt.png" },
+  { "symbol": "xrp", "name": "Ripple", "price" : 0.44319, "logo": "../img/xrp.png" }
 ]

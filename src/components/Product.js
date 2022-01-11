@@ -8,7 +8,7 @@ export default function Product(props) {
     <div className='product'>
       {coins.map((coin) => {
         return (
-          <div key={coin.name} className='coin-container'>
+          <div key={coin.symbol} className='coin-container'>
             
             <h3>{coin.name}</h3>
 

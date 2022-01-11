@@ -1,11 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
+import Home from './components/Home';
+import Product from './components/Product';
+import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <div className='App'>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/product' element={<Product />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }

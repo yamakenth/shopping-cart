@@ -59,6 +59,16 @@
   cursor: pointer;
 }
 
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.active {
+  color: #efb90a !important;
+  border-bottom: 2px solid #efb90a;
+}
+
 .cart {
   position:relative;
 }

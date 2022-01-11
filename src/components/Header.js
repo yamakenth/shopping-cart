@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Logo from '../img/decentralize.png';
 import ShoppingCart from '../img/shopping-bag.png';
 
@@ -11,9 +12,9 @@ export default function Header() {
       </div>
       <div className='container right'>
         <ul className='nav'>
-          <li>Home</li>
-          <li>Product</li>
-          <li>Contact</li>
+          <li><NavLink activeClassName='active' to='/'>Home</NavLink></li>
+          <li><NavLink activeClassName='active' to='/product'>Product</NavLink></li>
+          <li><NavLink activeClassName='active' to='/contact'>Contact</NavLink></li>
         </ul>
         <div className='cart'>
           <img src={ShoppingCart} alt='' id='shopping-cart' />

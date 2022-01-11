@@ -10,7 +10,10 @@ import Cart from './components/Cart';
 export default function App() {
   const [showCart, setShowCart] = useState(false);
   function handleShowCart() {
-    setShowCart(!showCart);
+    setShowCart(true);
+  }
+  function handleHideCart() {
+    setShowCart(false);
   }
   
   return (
@@ -22,7 +25,7 @@ export default function App() {
           <Route path='/product' element={<Product />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        <Cart showCart={showCart} handleShowCart={handleShowCart} />
+        {showCart && <Cart handleHideCart={handleHideCart} />}
       </div>
     </BrowserRouter>
   );

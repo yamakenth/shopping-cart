@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../img/decentralize.png';
 import ShoppingCart from '../img/shopping-bag.png';
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className='header'>
       <div className='container left'>
@@ -12,11 +12,11 @@ export default function Header() {
       </div>
       <div className='container right'>
         <ul className='nav'>
-          <li><NavLink activeClassName='active' to='/'>Home</NavLink></li>
-          <li><NavLink activeClassName='active' to='/product'>Product</NavLink></li>
-          <li><NavLink activeClassName='active' to='/contact'>Contact</NavLink></li>
+          <li><NavLink to='/'>Home</NavLink></li>
+          <li><NavLink to='/product'>Product</NavLink></li>
+          <li><NavLink to='/contact'>Contact</NavLink></li>
         </ul>
-        <div className='cart'>
+        <div className='cart' onClick={props.handleShowCart}>
           <img src={ShoppingCart} alt='' id='shopping-cart' />
           <p className='item-cnt'>0</p>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Data from './data/data.json';
 import Header from './components/Header';
@@ -47,7 +47,7 @@ export default function App() {
   const numItem = Object.values(cart).reduce((a, b) => a + b, 0);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='App'>
         <Header handleShowCart={handleShowCart} numItem={numItem} />
         <div className='content'>
@@ -77,6 +77,6 @@ export default function App() {
           />
         }
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

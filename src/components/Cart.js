@@ -13,15 +13,15 @@ export default function Cart(props) {
             (Object.keys(props.cart).length > 0) ?
             Object.keys(props.cart).map((symbol) => {
               const coin = props.data.filter((obj) => obj.symbol === symbol)[0];
+              const coinLogo = require(`../img/${coin.symbol}.png`);
               return(
                 <div key={symbol} className='cart-item'>
                   <div className='left'>
-                    <img src={coin.logo} alt='' />
+                    <img src={coinLogo} alt='' />
                   </div>
                   <div className='right'>
                     <p>{coin.name} ({coin.symbol.toUpperCase()})</p>
                     <p>{formatter.format(coin.price)}</p>
-                    
                     <label>
                       Qty: 
                       <input 
@@ -31,7 +31,6 @@ export default function Cart(props) {
                         value={props.cart[symbol]}
                       />
                     </label>
-
                     <p className='remove-from-cart' onClick={() => props.removeFromCart(symbol)}>
                       Remove
                     </p>

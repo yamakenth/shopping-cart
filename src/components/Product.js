@@ -9,10 +9,11 @@ export default function Product(props) {
   return (
     <div className='product'>
       {coins.map((coin) => {
+        const coinLogo = require(`../img/${coin.symbol}.png`);
         return (
           <div key={coin.symbol} className='coin-container'>
             <h3>{coin.name}</h3>
-            <img src={coin.logo} alt='' className='coin-logo'/>
+            <img src={coinLogo} alt='' className='coin-logo'/>
             <div className='price-row'>
               <h4>{coin.symbol.toUpperCase()}</h4>
               <h4>{formatter.format(coin.price)}</h4>

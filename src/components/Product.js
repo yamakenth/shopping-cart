@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // currency formatter 
 const formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
@@ -18,7 +17,7 @@ export default function Product(props) {
               <h4>{coin.symbol.toUpperCase()}</h4>
               <h4>{formatter.format(coin.price)}</h4>
             </div>
-            <Link to='/product' className='buy-now'>SHOP NOW</Link>
+            <button type='button' className='buy-now'>SHOP NOW</button>
           </div>
         );
       })}

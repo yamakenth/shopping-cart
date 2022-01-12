@@ -21,6 +21,9 @@ export default function App() {
   function addToCart(symbol) {
     setCart(generateNewCart(symbol));
   }
+  function clearCart() {
+    setCart({});
+  }
 
   function generateNewCart(symbol) {
     const newCart = cart;
@@ -55,7 +58,12 @@ export default function App() {
           </Routes>
         </div>
         {showCart && 
-          <Cart handleHideCart={handleHideCart} cart={cart}/>
+          <Cart 
+            handleHideCart={handleHideCart} 
+            clearCart={clearCart}
+            cart={cart} 
+            data={Data} 
+          />
         }
       </div>
     </BrowserRouter>

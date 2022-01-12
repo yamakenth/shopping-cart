@@ -19,7 +19,7 @@ export default function App() {
 
   const [cart, setCart] = useState({});
   function addToCart(symbol) {
-    const newCart = cart;
+    const newCart = { ...cart };
     if (!(symbol in newCart)) {
       newCart[symbol] = 0;
     }
@@ -36,6 +36,11 @@ export default function App() {
         newCart[key] = cart[key];
       }
     }
+    setCart(newCart);
+  }
+  function changeQty(e, symbol) {
+    const newCart = { ...cart };
+    newCart[symbol] = parseInt(e.target.value);
     setCart(newCart);
   }
 
@@ -66,6 +71,7 @@ export default function App() {
             handleHideCart={handleHideCart} 
             clearCart={clearCart}
             removeFromCart={removeFromCart}
+            changeQty={changeQty}
             cart={cart} 
             data={Data} 
           />

@@ -27,6 +27,7 @@ export default function Cart(props) {
                       <input 
                         type='number' 
                         min='1'
+                        onChange={(e) => props.changeQty(e, symbol)}
                         value={props.cart[symbol]}
                       />
                     </label>

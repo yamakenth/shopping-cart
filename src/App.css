@@ -31,9 +31,11 @@ a:hover {
   color: #ebebeb;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header {
+  align-self: stretch;
   background-color: #212529;
   display: flex;
   justify-content: space-between;
@@ -205,4 +207,56 @@ a, a:visited {
   background-color: #ebebeb;
   border-radius: 50%;
   padding: 1px 2px;
+}
+
+.product {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.coin-container {
+  flex: 1;
+  min-width: 160px;
+  height: 200px;
+  background-color: #ebebeb;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.coin-container:hover {
+  transform: scale(1.05);
+}
+
+.coin-container h3 {
+  margin-bottom: 10px;
+}
+
+.coin-logo {
+  height: 50px;
+  width: auto;
+}
+
+.price-row {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-now {
+  color: #ebebeb !important;
+  font-size: 14px;
+  font-weight: 900;
+  align-self: center;
+  padding: 4px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 6px;
+  background-color: #212529;
 }

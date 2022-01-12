@@ -19,38 +19,50 @@ export default function App() {
 
   const [cart, setCart] = useState({});
   function addToCart(symbol) {
-    setCart(generateNewCart(symbol));
-  }
-  function clearCart() {
-    setCart({});
-  }
-  function removeFromCart(symbol) {
-    setCart(generatedDeletedCart(symbol));
-  }
-
-  function generateNewCart(symbol) {
     const newCart = cart;
     if (!(symbol in newCart)) {
       newCart[symbol] = 0;
     }
     newCart[symbol]++;
-
-    return newCart;
+    setCart(newCart);
   }
-
-  function generatedDeletedCart(symbol) {
+  function clearCart() {
+    setCart({});
+  }
+  function removeFromCart(symbol) {
     const newCart = {};
     for (const key in cart) {
       if (key !== symbol) {
         newCart[key] = cart[key];
       }
     }
-
-    return newCart;
+    setCart(newCart);
+  }
+  function changeQty(symbol, newAmount) {
+    const newCart = cart;
+    for (const key in newCart) {
+      if (key !== symbol) {
+        newCart[key] = newAmount;
+      }
+    }
+    setCart(newCart);
   }
 
   const numItem = Object.values(cart).reduce((a, b) => a + b, 0);
   
+  // handle input on edit form
+  function useInput(initialValue) {
+    const [value, setValue] = useState(initialValue);
+    function handleChange(e) {
+      setValue(e.target.value);
+    }
+
+    return {
+      value,
+      onChange: handleChange
+    }
+  }
+
   return (
     <BrowserRouter>
       <div className='App'>
@@ -76,6 +88,7 @@ export default function App() {
             handleHideCart={handleHideCart} 
             clearCart={clearCart}
             removeFromCart={removeFromCart}
+            useInput={useInput}
             cart={cart} 
             data={Data} 
           />

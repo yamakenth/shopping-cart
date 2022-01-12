@@ -16,6 +16,21 @@ export default function App() {
   function handleHideCart() {
     setShowCart(false);
   }
+
+  const [cart, setCart] = useState({});
+  function addToCart(symbol) {
+    setCart(generateNewCart(symbol));
+  }
+
+  function generateNewCart(symbol) {
+    const newCart = cart;
+    if (!(symbol in newCart)) {
+      newCart[symbol] = 0;
+    }
+    newCart[symbol]++;
+
+    return newCart;
+  }
   
   return (
     <BrowserRouter>
@@ -23,21 +38,23 @@ export default function App() {
         <Header handleShowCart={handleShowCart} />
         <div className='content'>
           <Routes>
-            <Route 
-              path='/' 
-              element={<Home />} 
-            />
+            <Route path='/' element={<Home />} />
             <Route 
               path='/product' 
-              element={<Product data={Data} handleShowCart={handleShowCart} />} 
+              element={
+                <Product 
+                  data={Data} 
+                  handleShowCart={handleShowCart} 
+                  addToCart={addToCart}
+                />
+              } 
             />
-            <Route 
-              path='/contact' 
-              element={<Contact />} 
-            />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
-        {showCart && <Cart handleHideCart={handleHideCart} />}
+        {showCart && 
+          <Cart handleHideCart={handleHideCart} cart={cart}/>
+        }
       </div>
     </BrowserRouter>
   );

@@ -1,4 +1,4 @@
-# tic-tac-toe
+# shopping-cart
 > This is a simple app for an online store.
 ## Live Demo
 - [Click here](https://yamakenth.github.io/shopping-cart/)

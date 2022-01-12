@@ -24,6 +24,9 @@ export default function App() {
   function clearCart() {
     setCart({});
   }
+  function removeFromCart(symbol) {
+    setCart(generatedDeletedCart(symbol));
+  }
 
   function generateNewCart(symbol) {
     const newCart = cart;
@@ -31,6 +34,17 @@ export default function App() {
       newCart[symbol] = 0;
     }
     newCart[symbol]++;
+
+    return newCart;
+  }
+
+  function generatedDeletedCart(symbol) {
+    const newCart = {};
+    for (const key in cart) {
+      if (key !== symbol) {
+        newCart[key] = cart[key];
+      }
+    }
 
     return newCart;
   }
@@ -61,6 +75,7 @@ export default function App() {
           <Cart 
             handleHideCart={handleHideCart} 
             clearCart={clearCart}
+            removeFromCart={removeFromCart}
             cart={cart} 
             data={Data} 
           />

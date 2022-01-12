@@ -27,7 +27,9 @@ export default function Cart(props) {
                       <input type='number' value={props.cart[symbol]} />
                     </label>
 
-                    <p className='remove-from-cart'>remove</p>
+                    <p className='remove-from-cart' onClick={() => props.removeFromCart(symbol)}>
+                      Remove
+                    </p>
                   </div>
                 </div>
               );

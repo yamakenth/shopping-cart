@@ -31,11 +31,13 @@ export default function App() {
 
     return newCart;
   }
+
+  const numItem = Object.values(cart).reduce((a, b) => a + b, 0);
   
   return (
     <BrowserRouter>
       <div className='App'>
-        <Header handleShowCart={handleShowCart} />
+        <Header handleShowCart={handleShowCart} numItem={numItem} />
         <div className='content'>
           <Routes>
             <Route path='/' element={<Home />} />

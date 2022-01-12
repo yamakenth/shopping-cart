@@ -18,7 +18,7 @@ export default function Header(props) {
         </ul>
         <div className='cart' onClick={props.handleShowCart}>
           <img src={ShoppingCart} alt='' id='shopping-cart' />
-          <p className='item-cnt'>0</p>
+          <p className='item-cnt'>{props.numItem}</p>
         </div>
       </div>
     </div>

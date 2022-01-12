@@ -38,30 +38,8 @@ export default function App() {
     }
     setCart(newCart);
   }
-  function changeQty(symbol, newAmount) {
-    const newCart = cart;
-    for (const key in newCart) {
-      if (key !== symbol) {
-        newCart[key] = newAmount;
-      }
-    }
-    setCart(newCart);
-  }
 
   const numItem = Object.values(cart).reduce((a, b) => a + b, 0);
-  
-  // handle input on edit form
-  function useInput(initialValue) {
-    const [value, setValue] = useState(initialValue);
-    function handleChange(e) {
-      setValue(e.target.value);
-    }
-
-    return {
-      value,
-      onChange: handleChange
-    }
-  }
 
   return (
     <BrowserRouter>
@@ -88,7 +66,6 @@ export default function App() {
             handleHideCart={handleHideCart} 
             clearCart={clearCart}
             removeFromCart={removeFromCart}
-            useInput={useInput}
             cart={cart} 
             data={Data} 
           />

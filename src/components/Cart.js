@@ -13,7 +13,6 @@ export default function Cart(props) {
             (Object.keys(props.cart).length > 0) ?
             Object.keys(props.cart).map((symbol) => {
               const coin = props.data.filter((obj) => obj.symbol === symbol)[0];
-              const coinInCart = props.useInput(props.cart[symbol]);
               return(
                 <div key={symbol} className='cart-item'>
                   <div className='left'>
@@ -28,8 +27,7 @@ export default function Cart(props) {
                       <input 
                         type='number' 
                         min='1'
-                        value={coinInCart.value} 
-                        onChange={coinInCart.onChange} 
+                        value={props.cart[symbol]}
                       />
                     </label>
 

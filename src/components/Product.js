@@ -17,7 +17,9 @@ export default function Product(props) {
               <h4>{coin.symbol.toUpperCase()}</h4>
               <h4>{formatter.format(coin.price)}</h4>
             </div>
-            <button type='button' className='buy-now'>SHOP NOW</button>
+            <button type='button' className='buy-now' onClick={props.handleShowCart}>
+              SHOP NOW
+            </button>
           </div>
         );
       })}

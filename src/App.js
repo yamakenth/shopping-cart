@@ -23,9 +23,18 @@ export default function App() {
         <Header handleShowCart={handleShowCart} />
         <div className='content'>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/product' element={<Product data={Data} />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route 
+              path='/' 
+              element={<Home />} 
+            />
+            <Route 
+              path='/product' 
+              element={<Product data={Data} handleShowCart={handleShowCart} />} 
+            />
+            <Route 
+              path='/contact' 
+              element={<Contact />} 
+            />
           </Routes>
         </div>
         {showCart && <Cart handleHideCart={handleHideCart} />}

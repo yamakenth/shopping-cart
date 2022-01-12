@@ -7,7 +7,7 @@ export default function Cart(props) {
         <h3>YOUR BAG</h3>
         <button type='button' onClick={props.handleHideCart}>CONTINUE SHOPPING</button>
       </div>
-      <div className='overlay'></div>
+      <div className='overlay' onClick={props.handleHideCart}></div>
     </div>  
   );
 }

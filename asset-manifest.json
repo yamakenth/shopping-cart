@@ -1,12 +1,24 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.73a7b5f8.css",
-    "main.js": "/shopping-cart/static/js/main.66951a26.js",
+    "main.js": "/shopping-cart/static/js/main.0466c11e.js",
+    "static/media/doge.png": "/shopping-cart/static/media/doge.a9424efadeaad7cd97e7.png",
+    "static/media/eth.png": "/shopping-cart/static/media/eth.a85b6de0dc4a013ae2f8.png",
+    "static/media/sol.png": "/shopping-cart/static/media/sol.88dd9cd2498aebe1ee8c.png",
+    "static/media/usdc.png": "/shopping-cart/static/media/usdc.c4477cfcf6565cacc68b.png",
+    "static/media/dot.png": "/shopping-cart/static/media/dot.f6a28fa08b3298a9a296.png",
+    "static/media/ada.png": "/shopping-cart/static/media/ada.d9b90224323ccff57026.png",
+    "static/media/btc.png": "/shopping-cart/static/media/btc.82491fef997ab841639c.png",
+    "static/media/luna.png": "/shopping-cart/static/media/luna.6767c7f8985db7f64b69.png",
     "static/media/cryptos.jpeg": "/shopping-cart/static/media/cryptos.e41e6978098ca9515f89.jpeg",
+    "static/media/usdt.png": "/shopping-cart/static/media/usdt.c1d587669942a5e9bc47.png",
+    "static/media/xrp.png": "/shopping-cart/static/media/xrp.a30ac2af14f2c3a5461a.png",
     "static/media/decentralize.png": "/shopping-cart/static/media/decentralize.f2a9f0c34cbf733f9587.png",
     "static/media/roboto-v29-latin-regular.svg": "/shopping-cart/static/media/roboto-v29-latin-regular.4f862c8ba4ed785461ee.svg",
+    "static/media/avax.png": "/shopping-cart/static/media/avax.e1fb45e8e070674b1a54.png",
     "static/media/instagram.png": "/shopping-cart/static/media/instagram.79535458a8a6d88f81d4.png",
     "static/media/roboto-v29-latin-regular.ttf": "/shopping-cart/static/media/roboto-v29-latin-regular.69358f64aea6fd09499a.ttf",
+    "static/media/bnb.png": "/shopping-cart/static/media/bnb.92643887cb735977d3b9.png",
     "static/media/discord.png": "/shopping-cart/static/media/discord.87103b7fb8f04ea4d3ef.png",
     "static/media/tik-tok.png": "/shopping-cart/static/media/tik-tok.a645e99a44aea69d0ac1.png",
     "static/media/roboto-v29-latin-regular.woff": "/shopping-cart/static/media/roboto-v29-latin-regular.9b78ea3bc4f00e508f01.woff",
@@ -17,10 +29,10 @@
     "static/media/facebook.png": "/shopping-cart/static/media/facebook.4f037d961598aff2a0a4.png",
     "index.html": "/shopping-cart/index.html",
     "main.73a7b5f8.css.map": "/shopping-cart/static/css/main.73a7b5f8.css.map",
-    "main.66951a26.js.map": "/shopping-cart/static/js/main.66951a26.js.map"
+    "main.0466c11e.js.map": "/shopping-cart/static/js/main.0466c11e.js.map"
   },
   "entrypoints": [
     "static/css/main.73a7b5f8.css",
-    "static/js/main.66951a26.js"
+    "static/js/main.0466c11e.js"
   ]
 }

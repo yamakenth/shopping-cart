@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.73a7b5f8.css",
-    "main.js": "/shopping-cart/static/js/main.171d0c12.js",
+    "main.js": "/shopping-cart/static/js/main.66951a26.js",
     "static/media/cryptos.jpeg": "/shopping-cart/static/media/cryptos.e41e6978098ca9515f89.jpeg",
     "static/media/decentralize.png": "/shopping-cart/static/media/decentralize.f2a9f0c34cbf733f9587.png",
     "static/media/roboto-v29-latin-regular.svg": "/shopping-cart/static/media/roboto-v29-latin-regular.4f862c8ba4ed785461ee.svg",
@@ -17,10 +17,10 @@
     "static/media/facebook.png": "/shopping-cart/static/media/facebook.4f037d961598aff2a0a4.png",
     "index.html": "/shopping-cart/index.html",
     "main.73a7b5f8.css.map": "/shopping-cart/static/css/main.73a7b5f8.css.map",
-    "main.171d0c12.js.map": "/shopping-cart/static/js/main.171d0c12.js.map"
+    "main.66951a26.js.map": "/shopping-cart/static/js/main.66951a26.js.map"
   },
   "entrypoints": [
     "static/css/main.73a7b5f8.css",
-    "static/js/main.171d0c12.js"
+    "static/js/main.66951a26.js"
   ]
 }
